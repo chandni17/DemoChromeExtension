@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Currency Converter</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/currencyConvert.js"></script>
+		<style>
+			.bodyPadding
+			{
+				padding:10px;
+			}
+			.divPopup
+			{
+				min-width: 280px;
+				margin-bottom:0px;
+			}
+		</style>
+	</head>
+	<body class="bodyPadding">
+			<div class="col-lg-4 well divPopup">
+				<h3 class="text-primary">Currency Converter</h3>
+				<hr>
+				<!--Type is given as number so that alphabets are not allowed to be entered--> 
+				<input id="sourceNumber" class="form-control" type ="number" placeholder="Enter the amount"></input>
+				<br>
+				<!--To Select Source Currency--> 
+				<select id ="sourceCurrency" class="form-control">
+					<option value="" disabled selected>Select Source Currency</option>
+				</select>
+				<br>
+				<!--To Select Destination Currency--> 
+				<select id ="destinationCurrency" class="form-control">
+					<option value="" disabled selected>Select Destination Currency</option>>
+				</select>
+				<br>
+				<button id="btn" class="btn btn-primary">Convert</button>
+				<br><br>
+				<!--Input element to store the result--> 
+				<input id ="destinationNumber" class="form-control" Placeholder="Result" disabled="disabled"/>
+			</div>
+	</body>
+</html>
+
